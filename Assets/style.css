@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: arial;
+  }
+  nav {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+
+  }
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  a.active, a:hover {
+    background-color: white;
+    color: black;
+    transition: .8s;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 952px){
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  
+  }
+  nav ul li a {
+    font-size: 16px;
+
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+
+    }
+  
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100;
+      text-align: center;
+      transition: all .8s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover, a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul {
+      left: 0;
+
+    }
+  
+  }
+  /* END TO MEDIA QUERY */
+body{
+  background: url(./abc.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+  section {
+    
+    /* height: calc(100vh - 80px); */
+    height: calc(auto - 80px);
+    padding: 20px;
+    
+  }
+  .profilepicture{
+    
+    
+    height: 250px;
+    width: 250px;
+    background-image: url(./Sayed\ Jasoor\ Sadat.jpg);
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+
+  /* END TO NAVIGATION MENU BAR */
+
+  .content {
+    background-color: #e6e6e6;
+    padding: 50px;
+    height: auto;
+    opacity: 0.6;
+    position: relative;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    border-radius: 50px;
+  }
+
+  
+  .content p{
+    line-height: 30px;
+    text-align: left;
+    
+  }
+  .content blockquote{
+    line-height: 30px;
+  }
+  
+  
+  @media (max-width: 858px){
+    section{
+      display: none;
+    }
+    .content{
+      display: none;
+    }
+    .content blockquote{
+      display: none;
+    }
+    
+  }
+
+  footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+  }
+  
+  .footer {
+    display: flex;
+    margin: auto;
+    color: white;
+
+  }
+  
